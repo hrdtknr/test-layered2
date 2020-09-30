@@ -1,9 +1,9 @@
 package repo
 
 import (
-	"test-layered/backend/domain/repo/model"
+	"github.com/test-layered2/backend/domain/repo/model"
 )
 
-type IUserRepository interface {
-	GetTodoList() ([]model.Todo, error)
+type Todo interface {
+	Todos() ([]model.Todo, error)
 }
